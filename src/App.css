@@ -1,0 +1,84 @@
+@keyframes floatUp {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-200px) scale(1.5); opacity: 0; }
+}
+
+.heart {
+  position: absolute;
+  bottom: 0;
+  font-size: 2rem;
+  color: #ff1493;
+  animation: floatUp 4s ease-in infinite;
+}
+
+.heart:nth-child(2) {
+  left: 20%;
+  animation-delay: 1s;
+}
+.heart:nth-child(3) {
+  left: 40%;
+  animation-delay: 2s;
+}
+.heart:nth-child(4) {
+  left: 60%;
+  animation-delay: 3s;
+}
+.heart:nth-child(5) {
+  left: 80%;
+  animation-delay: 4s;
+}
+
+
+/* annimation on Welcome page - No button click */
+.no-button {
+  transition: all 0.3s ease;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.4s;
+}
+
+/* Dark overlay for heartbreak */
+.dark-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  animation: fadeOut 3s forwards;
+  z-index: 10;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Broken heart emoji burst */
+.emoji-burst {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 11;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 10rem;
+  animation: fall 2s linear forwards;
+  left: calc(10% + (80% * var(--rand)));
+}
+
+@keyframes fall {
+  from { transform: translateY(-50px); opacity: 1; }
+  to { transform: translateY(400px); opacity: 0; }
+}
