@@ -182,7 +182,7 @@ select:focus {
 
 /* --------------------------- Time Page Style --------------------------- */
 .large-card {
-  width: 500px;
+  width: 80%;
   margin: auto;
   padding: 30px;
   background: #fff0f5;
@@ -236,7 +236,7 @@ select:focus {
 /* --------------------------- Activities Page Style --------------------------- */
 
 .large-card {
-  width: 650px;
+  width: 80%;
   margin: auto;
   padding: 30px;
   background: #fff0f5;
@@ -336,3 +336,109 @@ select:focus {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+
+/* ---------------- Responsive Design ---------------- */
+
+/* iPhone 13, 14, 15 (375px–430px) */
+@media screen and (max-width: 430px) {
+  body {
+    height: auto;
+    padding: 15px;
+    align-items: flex-start;
+  }
+
+  .app {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .card, .large-card, .success {
+    width: 80% !important;
+    height: auto !important;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .card h2, .romantic-title {
+    font-size: 1.6rem;
+  }
+
+  .card p, .subtitle, .closing {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .no-btn{
+    width: 20%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr; /* stack activities vertically */
+  }
+
+  .time-card {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .info-box {
+    padding: 15px;
+    margin: 15px auto;
+  }
+}
+
+/* iPad & tablets (600px–1024px) */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  body {
+    height: auto;
+    padding: 30px;
+  }
+
+  .app {
+    max-width: 95%;
+    margin: auto;
+  }
+
+  .card, .large-card, .success {
+    width: 80% !important;
+    padding: 25px;
+  }
+
+  .card h2, .romantic-title {
+    font-size: 2rem;
+  }
+
+  .card p, .subtitle, .closing {
+    font-size: 1.1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr; /* keep two columns */
+    gap: 15px;
+  }
+
+  .time-card {
+    width: 80%;
+    padding: 18px;
+  }
+
+  .info-box {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+
+/* ---------------- Responsive Design END ---------------- */

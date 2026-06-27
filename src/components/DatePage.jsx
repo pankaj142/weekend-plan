@@ -26,7 +26,7 @@ function DatePage() {
         padding: "40px",
       }}
     >
-      <h2>When are you free, my sunshine? 🌞</h2> 
+      <h2>When are you free, <br/> my sunshine? 🌞</h2> 
       <p>I want to steal a day just for us…</p>
       
       <div style={{ display: "inline-block", position: "relative" }}>

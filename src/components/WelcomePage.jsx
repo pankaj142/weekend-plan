@@ -73,7 +73,7 @@ function WelcomePage() {
           onClick={handleNo}
           onMouseEnter={moveNoButton}
           onMouseOver={moveNoButton}
-          className={`secondary no-button ${shake ? "shake" : ""}`}
+          className={`no-btn secondary no-button ${shake ? "shake" : ""}`}
           style={{
             position: "absolute",
             top: noButtonPos.top,
